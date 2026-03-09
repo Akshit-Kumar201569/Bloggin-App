@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="container">
+        <h3>Create Post</h3>
+        <form id="postForm">
+            <input type="text" id="title" placeholder="Post Title" required>
+            <textarea id="content" placeholder="Post Content" required></textarea>
+            <button type="submit">Save Post</button>
+        </form>
+
+        <h3>Your Posts</h3>
+        <div id="userPosts"></div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
